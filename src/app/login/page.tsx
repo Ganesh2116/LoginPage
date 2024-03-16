@@ -18,7 +18,7 @@ const LoginPage = () => {
       const response = await axios.post("/api/users/login", user);
       console.log("Login success", response.data);
       toast.success("Login success");
-      router.push("/profile/[id]");
+      router.push("/profile");
     } catch (error: any) {
       console.log("login failed ", error.meassage);
       toast.error(error.meassage);
