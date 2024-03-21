@@ -18,13 +18,23 @@ const page = () => {
   };
   return (
     <div>
-      Profile page
-      <button
-        onClick={logout}
-        className=" bg-blue-500 text-white p-2 rounded-md mt-2 "
-      >
-        Log out
-      </button>
+      <div className=" items-end flex justify-end max-w-[1500px] pt-4">
+        <button
+          onClick={logout}
+          className=" bg-blue-500 text-white p-2 rounded-md mt-2"
+        >
+          Log out
+        </button>
+      </div>
+      <div className=" flex justify-center items-center ">
+        <h1 className="font-bold text-3xl pt-8">Profile Page</h1>
+      </div>
+      <div className="item-center justify-center flex pt-14">
+        <p>
+          This is the profile page. You can only see this page if you are logged
+          in.
+        </p>
+      </div>
     </div>
   );
 };
