@@ -3,7 +3,7 @@ import axios from "axios";
 import { useRouter } from "next/navigation";
 import toast from "react-hot-toast";
 
-const page = () => {
+const Page = () => {
   const router = useRouter();
 
   const logout = async () => {
@@ -38,4 +38,4 @@ const page = () => {
     </div>
   );
 };
-export default page;
+export default Page;
